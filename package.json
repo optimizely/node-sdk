@@ -1,0 +1,40 @@
+{
+  "name": "optimizely-server-sdk",
+  "description": "Node SDK for consumption for server-side testing",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/optimizely/node-sdk.git"
+  },
+  "keywords": [
+    "optimizely"
+  ],
+  "homepage": "https://github.com/optimizely/node-sdk",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha ./tests.js ./lib/**/*tests.js ./lib/**/**/*tests.js",
+    "profile-test": "./node_modules/.bin/mocha ./tests/profiling_tests.js",
+    "lint": "eslint lib/** index.js tests.js",
+    "cover": "istanbul cover _mocha ./tests.js ./lib/**/*tests.js ./lib/**/**/*tests.js",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+  },
+  "dependencies": {
+    "bluebird": "^3.3.5",
+    "jsonschema": "^1.1.0",
+    "lodash": "4.13.1",
+    "murmurhash": "0.0.2",
+    "request-promise": "^2.0.1",
+    "sprintf": "^0.1.5"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "eslint": "^2.9.0",
+    "istanbul": "^0.4.3",
+    "mathjs": "^3.3.0",
+    "mocha": "^2.4.5",
+    "mocha-lcov-reporter": "^1.2.0",
+    "nock": "^7.7.2",
+    "sinon": "^1.17.4"
+  }
+}
