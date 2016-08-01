@@ -59,7 +59,6 @@ var config = {
         entityId: '',
         endOfRange: 10000
       }],
-      percentageIncluded: 10000,
       audienceIds: ['11154'],
       forcedVariations: {}
     }, {
@@ -80,7 +79,6 @@ var config = {
         entityId: '662',
         endOfRange: 10000
       }],
-      percentageIncluded: 10000,
       audienceIds: [],
       forcedVariations: {}
     }]
@@ -106,14 +104,12 @@ var config = {
         entityId: '554',
         endOfRange: 3000
       }],
-      percentageIncluded: 3000,
       audienceIds: [],
       forcedVariations: {}
     }]
   }],
   experiments: [{
     key: 'testExperiment',
-    percentageIncluded: 9000,
     status: 'Running',
     forcedVariations: {
       'user1': 'control',
@@ -137,7 +133,6 @@ var config = {
     }]
   }, {
     key: 'testExperimentWithAudiences',
-    percentageIncluded: 10000,
     status: 'Running',
     forcedVariations: {},
     audienceIds: ['11154'],
@@ -158,7 +153,6 @@ var config = {
     }]
   }, {
     key: 'testExperimentNotRunning',
-    percentageIncluded: 10000,
     status: 'Not started',
     forcedVariations: {},
     audienceIds: [],

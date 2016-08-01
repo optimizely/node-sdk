@@ -4,7 +4,6 @@ var config = {
   experiments: [
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment4",
       trafficAllocation: [
         {
@@ -32,7 +31,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment5",
       trafficAllocation: [
         {
@@ -60,7 +58,6 @@ var config = {
     },
     {
       status: "Paused",
-      percentageIncluded: 10000,
       key: "testExperimentNotRunning",
       trafficAllocation: [
         {
@@ -88,7 +85,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment1",
       trafficAllocation: [
         {
@@ -119,7 +115,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment3",
       trafficAllocation: [
         {
@@ -147,7 +142,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment6",
       trafficAllocation: [
         {
@@ -177,7 +171,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment2",
       trafficAllocation: [
         {
@@ -208,7 +201,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperimentWithFirefoxAudience",
       trafficAllocation: [
         {
@@ -315,7 +307,6 @@ var config = {
       experiments: [
         {
           status: "Running",
-          percentageIncluded: 5000,
           key: "mutex_exp2",
           trafficAllocation: [
             {
@@ -346,7 +337,6 @@ var config = {
         },
         {
           status: "Running",
-          percentageIncluded: 5000,
           key: "mutex_exp1",
           trafficAllocation: [
             {
