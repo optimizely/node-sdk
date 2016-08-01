@@ -4,7 +4,6 @@ var config = {
   experiments: [
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment12",
       trafficAllocation: [
         {
@@ -32,7 +31,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment19",
       trafficAllocation: [
         {
@@ -60,7 +58,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment21",
       trafficAllocation: [
         {
@@ -88,7 +85,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment7",
       trafficAllocation: [
         {
@@ -116,7 +112,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment15",
       trafficAllocation: [
         {
@@ -144,7 +139,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment16",
       trafficAllocation: [
         {
@@ -172,7 +166,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment8",
       trafficAllocation: [
         {
@@ -200,7 +193,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperimentWithFirefoxAudience",
       trafficAllocation: [
         {
@@ -230,7 +222,6 @@ var config = {
     },
     {
       status: "Not started",
-      percentageIncluded: 10000,
       key: "testExperimentNotRunning",
       trafficAllocation: [
         {
@@ -258,7 +249,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment5",
       trafficAllocation: [
         {
@@ -286,7 +276,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment0",
       trafficAllocation: [
         {
@@ -314,7 +303,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment2",
       trafficAllocation: [
         {
@@ -345,7 +333,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment13",
       trafficAllocation: [
         {
@@ -373,7 +360,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment18",
       trafficAllocation: [
         {
@@ -401,7 +387,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment17",
       trafficAllocation: [
         {
@@ -429,7 +414,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment11",
       trafficAllocation: [
         {
@@ -457,7 +441,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment3",
       trafficAllocation: [
         {
@@ -485,7 +468,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment10",
       trafficAllocation: [
         {
@@ -513,7 +495,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment20",
       trafficAllocation: [
         {
@@ -541,7 +522,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment9",
       trafficAllocation: [
         {
@@ -569,7 +549,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment14",
       trafficAllocation: [
         {
@@ -597,7 +576,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment6",
       trafficAllocation: [
         {
@@ -625,7 +603,6 @@ var config = {
     },
     {
       status: "Running",
-      percentageIncluded: 10000,
       key: "testExperiment4",
       trafficAllocation: [
         {
