@@ -1,5 +1,5 @@
 #Optimizely Node SDK
-[![Build Status](https://travis-ci.com/optimizely/node-sdk.svg?token=f1nmwFnopXzkdMKTUReK&branch=master)](https://travis-ci.com/optimizely/node-sdk)
+[![Build Status](https://travis-ci.org/optimizely/node-sdk.svg?token=f1nmwFnopXzkdMKTUReK&branch=master)](https://travis-ci.org/optimizely/node-sdk)
 [![Coverage Status](https://coveralls.io/repos/github/optimizely/node-sdk/badge.svg?branch=master&t=pegN7y)](https://coveralls.io/github/optimizely/node-sdk?branch=master)
 
 This repository houses the Node SDK for Optimizely's server-side testing product, which is currently in private beta.
