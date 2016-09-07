@@ -363,8 +363,7 @@ var configNewOptly = {
   accountId: '12001',
   dimensions: [{
     key: 'browser_type',
-    id: '111094',
-    segmentId: '5175100584230912'
+    id: '111094'
   }],
   audiences: [{
     name: 'Firefox users',
