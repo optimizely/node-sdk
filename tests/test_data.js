@@ -361,7 +361,7 @@ var configNewOptly = {
     }]
   }],
   accountId: '12001',
-  dimensions: [{
+  attributes: [{
     key: 'browser_type',
     id: '111094'
   }],
