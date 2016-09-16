@@ -375,12 +375,16 @@ var configNewOptly = {
 
 var getParsedAudiences = [{
   name: 'Firefox users',
-  conditions: ["and", ["or", ["or", {"name": "browser_type", "type": "custom_attribute", "value": "firefox"}]]],
+  conditions: ["and", ["or", ["or", {"name": "browser_type", "type": "custom_dimension", "value": "firefox"}]]],
   id: '11154'
 }];
 
 var getTestProjectConfig = function() {
   return cloneDeep(config);
+};
+
+var getTestProjectConfigNewOptly = function() {
+  return cloneDeep(configNewOptly);
 };
 
 module.exports = {
