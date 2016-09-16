@@ -375,13 +375,7 @@ var configNewOptly = {
 
 var getParsedAudiences = [{
   name: 'Firefox users',
-  conditions: ["and", ["or", ["or", {"name": "browser_type", "type": "custom_dimension", "value": "firefox"}]]],
-  id: '11154'
-}];
-
-var getParsedAudiencesNewOptly = [{
-  name: 'Firefox users',
-  conditions: ["and", ["or", ["or", {"name": "browser_type", "type": "custom_dimension", "value": "firefox"}]]],
+  conditions: ["and", ["or", ["or", {"name": "browser_type", "type": "custom_attribute", "value": "firefox"}]]],
   id: '11154'
 }];
 
