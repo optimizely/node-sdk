@@ -28,8 +28,15 @@ module.exports = {
     if (config) {
       try {
         configValidator.validate(config);
+        config.isValidInstance = true;
       } catch (ex) {
-        defaultLogger.log(enums.LOG_LEVEL.ERROR, sprintf('%s: %s', MODULE_NAME, ex.message));
+        if (config.logger) {
+          config.logger.log(enums.LOG_LEVEL.ERROR, sprintf('%s: %s', MODULE_NAME, ex.message));
+        } else {
+          var simpleLogger = logger.createLogger();
+          simpleLogger.log(enums.LOG_LEVEL.ERROR, sprintf('%s: %s', MODULE_NAME, ex.message));
+        }
+        config.isValidInstance = false;
       }
     }
 
