@@ -15,7 +15,7 @@ npm install optimizely-server-sdk --save
 ```
 
 ###Using the SDK
-See the Optimizely full stack testing [developer documentation](http://developers.optimizely.com/server/reference/index.html) to learn how to set up your first Node project and use the SDK.
+See the Optimizely X Full Stack testing [developer documentation](http://developers.optimizely.com/server/reference/index.html) to learn how to set up your first Node project and use the SDK.
 
 ##Development
 
