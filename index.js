@@ -33,7 +33,7 @@ module.exports = {
         if (config.logger) {
           config.logger.log(enums.LOG_LEVEL.ERROR, sprintf('%s: %s', MODULE_NAME, ex.message));
         } else {
-          var simpleLogger = logger.createLogger();
+          var simpleLogger = logger.createLogger({logLevel: 4});
           simpleLogger.log(enums.LOG_LEVEL.ERROR, sprintf('%s: %s', MODULE_NAME, ex.message));
         }
         config.isValidInstance = false;

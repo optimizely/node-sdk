@@ -36,7 +36,7 @@ describe('optimizelyFactory', function() {
         assert.isTrue(console.error.called);
       });
 
-      it('should not throw if the provided config is not valid and call console.error if default logger is used', function() {
+      it('should not throw if the provided config is not valid and call console.error if no-op logger is used', function() {
         configValidator.validate.throws(new Error('Invalid config or something'));
         assert.doesNotThrow(function() {
           optimizelyFactory.createInstance({
