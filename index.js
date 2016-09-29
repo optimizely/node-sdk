@@ -41,6 +41,8 @@ module.exports = {
     }
 
     config = _.assign({
+      clientEngine: enums.NODE_CLIENT_ENGINE,
+      clientVersion: enums.NODE_CLIENT_VERSION,
       errorHandler: defaultErrorHandler,
       eventDispatcher: defaultEventDispatcher,
       logger: defaultLogger,
