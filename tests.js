@@ -25,7 +25,7 @@ describe('optimizelyFactory', function() {
         configValidator.validate.restore();
       });
 
-      it('should not throw if the provided config is not valid and call console.error if simple logger is used', function() {
+      it('should not throw if the provided config is not valid and call console.error if logger is passed in', function() {
         configValidator.validate.throws(new Error('Invalid config or something'));
         assert.doesNotThrow(function() {
           optimizelyFactory.createInstance({
@@ -36,14 +36,14 @@ describe('optimizelyFactory', function() {
         assert.isTrue(console.error.called);
       });
 
-      it('should not throw if the provided config is not valid and not call console.error if default (no-op) logger is used', function() {
+      it('should not throw if the provided config is not valid and call console.error if no-op logger is used', function() {
         configValidator.validate.throws(new Error('Invalid config or something'));
         assert.doesNotThrow(function() {
           optimizelyFactory.createInstance({
             datafile: {},
           });
         });
-        assert.isFalse(console.error.called);
+        assert.isTrue(console.error.called);
       });
 
       it('should create an instance of optimizely', function() {

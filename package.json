@@ -1,7 +1,7 @@
 {
   "name": "optimizely-server-sdk",
-  "description": "Node SDK for consumption for server-side testing",
-  "version": "0.1.4",
+  "description": "Node SDK for Optimizely X Full Stack",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/optimizely/node-sdk.git"
