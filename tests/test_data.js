@@ -209,6 +209,10 @@ var configNewOptly = {
     key: 'testEventWithMultipleExperiments',
     experimentIds: ['111127', '122227', '133337'],
     id: '111100'
+  }, {
+    key: 'testEventLaunched',
+    experimentIds: ['144447'],
+    id: '111101'
   }],
   groups: [{
     id: '666',
@@ -358,6 +362,27 @@ var configNewOptly = {
     }, {
       key: 'variationNotRunning',
       id: '133339'
+    }]
+  }, {
+    key: 'testExperimentLaunched',
+    status: 'Launched',
+    forcedVariations: {},
+    audienceIds: [],
+    layerId: '7',
+    trafficAllocation: [{
+      entityId: '144448',
+      endOfRange: 5000,
+    }, {
+      entityId: '144449',
+      endOfRange: 10000
+    }],
+    id: '144447',
+    variations: [{
+      key: 'controlLaunched',
+      id: '144448'
+    }, {
+      key: 'variationLaunched',
+      id: '144449'
     }]
   }],
   accountId: '12001',

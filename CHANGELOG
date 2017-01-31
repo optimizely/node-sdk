@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
+1.1.0
+-------------------------------------------------------------------------------
+* Add optional sessionId argument to activate and track method signatures.
+* Add sessionId and revision to event ticket.
+* Add 'Launched' status where user gets bucketed but event is not sent to Optimizely.
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
 1.0.1
 -------------------------------------------------------------------------------
 * Fix bug so conversion event is not sent if user is not bucketed into any experiment.
