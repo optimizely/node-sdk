@@ -153,7 +153,10 @@ var config = {
     }, {
       key: 'testExperimentWithAudiences',
       status: 'Running',
-      forcedVariations: {},
+      forcedVariations: {
+        'user1': 'controlWithAudience',
+        'user2': 'variationWithAudience'
+      },
       audienceIds: ['11154'],
       layerId: '5',
       trafficAllocation: [{
@@ -174,7 +177,10 @@ var config = {
     }, {
       key: 'testExperimentNotRunning',
       status: 'Not started',
-      forcedVariations: {},
+      forcedVariations: {
+        'user1': 'controlNotRunning',
+        'user2': 'variationNotRunning'
+      },
       audienceIds: [],
       layerId: '6',
       trafficAllocation: [{
