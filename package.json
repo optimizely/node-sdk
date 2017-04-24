@@ -19,7 +19,6 @@
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "dependencies": {
-    "bluebird": "^3.4.6",
     "jsonschema": "^1.1.0",
     "lodash": "4.13.1",
     "murmurhash": "0.0.2",
@@ -27,6 +26,7 @@
     "sprintf": "^0.1.5"
   },
   "devDependencies": {
+    "bluebird": "^3.4.6",
     "chai": "^3.5.0",
     "coveralls": "^2.11.9",
     "eslint": "^2.9.0",
