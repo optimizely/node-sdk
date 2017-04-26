@@ -20,11 +20,11 @@
   },
   "dependencies": {
     "bluebird": "^3.4.6",
+    "json-schema": "^0.2.3",
     "lodash": "4.13.1",
     "murmurhash": "0.0.2",
     "request-promise": "^2.0.1",
-    "sprintf": "^0.1.5",
-    "json-schema": "^0.2.3"
+    "sprintf": "^0.1.5"
   },
   "devDependencies": {
     "chai": "^3.5.0",
