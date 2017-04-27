@@ -1,7 +1,7 @@
 {
   "name": "optimizely-server-sdk",
   "description": "Node SDK for Optimizely X Full Stack",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/optimizely/node-sdk.git"
