@@ -1,7 +1,7 @@
 {
   "name": "optimizely-server-sdk",
   "description": "Node SDK for Optimizely X Full Stack",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/optimizely/node-sdk.git"
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "bluebird": "^3.4.6",
-    "jsonschema": "^1.1.0",
+    "json-schema": "^0.2.3",
     "lodash": "4.13.1",
     "murmurhash": "0.0.2",
     "request-promise": "^2.0.1",
