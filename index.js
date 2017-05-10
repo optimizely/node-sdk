@@ -36,6 +36,7 @@ module.exports = {
    * @param  {Object} config.errorHandler
    * @param  {Object} config.eventDispatcher
    * @param  {Object} config.logger
+   * @param  {Object} config.userProfileService
    * @return {Object} the Optimizely object
    */
   createInstance: function(config) {
