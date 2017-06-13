@@ -19,6 +19,7 @@ var configValidator = require('./lib/utils/config_validator');
 var defaultErrorHandler = require('./lib/plugins/error_handler');
 var defaultEventDispatcher = require('./lib/plugins/event_dispatcher');
 var enums = require('./lib/utils/enums');
+var jsonSchemaValidator = require('./lib/utils/json_schema_validator');
 var logger = require('./lib/plugins/logger');
 var sprintf = require('sprintf');
 
@@ -36,6 +37,7 @@ module.exports = {
    * @param  {Object} config.datafile
    * @param  {Object} config.errorHandler
    * @param  {Object} config.eventDispatcher
+   * @param  {Object} config.jsonSchemaValidator
    * @param  {Object} config.logger
    * @param  {Object} config.userProfileService
    * @return {Object} the Optimizely object
@@ -62,7 +64,9 @@ module.exports = {
       clientVersion: enums.NODE_CLIENT_VERSION,
       errorHandler: defaultErrorHandler,
       eventDispatcher: defaultEventDispatcher,
+      jsonSchemaValidator: jsonSchemaValidator,
       logger: defaultLogger,
+      skipJSONValidation: false
     }, config);
 
     return new Optimizely(config);
