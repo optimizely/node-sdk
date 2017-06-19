@@ -23,7 +23,8 @@
     "lodash": "4.13.1",
     "murmurhash": "0.0.2",
     "request": "^2.81.0",
-    "sprintf": "^0.1.5"
+    "sprintf": "^0.1.5",
+    "uuid": "^3.0.1"
   },
   "devDependencies": {
     "bluebird": "^3.4.6",
