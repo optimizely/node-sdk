@@ -14,11 +14,11 @@
  * limitations under the License.                                           *
  ***************************************************************************/
 
-var _ = require('lodash');
 var configValidator = require('./lib/utils/config_validator');
 var defaultErrorHandler = require('./lib/plugins/error_handler');
 var defaultEventDispatcher = require('./lib/plugins/event_dispatcher');
 var enums = require('./lib/utils/enums');
+var fns = require('./lib/utils/fns')
 var jsonSchemaValidator = require('./lib/utils/json_schema_validator');
 var logger = require('./lib/plugins/logger');
 var sprintf = require('sprintf');
@@ -59,7 +59,7 @@ module.exports = {
       }
     }
 
-    config = _.assign({
+    config = fns.assign({
       clientEngine: enums.NODE_CLIENT_ENGINE,
       clientVersion: enums.NODE_CLIENT_VERSION,
       errorHandler: defaultErrorHandler,
