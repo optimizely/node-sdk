@@ -2,6 +2,7 @@
 1.4.0
 -------------------------------------------------------------------------------
 * Add support for numeric metrics.
+* Add getForcedVariation and setForcedVariation methods for client-side variation setting
 
 -------------------------------------------------------------------------------
 1.3.3
