@@ -2,6 +2,8 @@
 1.4.0
 -------------------------------------------------------------------------------
 * Add support for numeric metrics.
+* Add getForcedVariation and setForcedVariation methods for client-side variation setting
+* Bug fix for filtering out null attribute and event tag values
 
 -------------------------------------------------------------------------------
 1.3.3
