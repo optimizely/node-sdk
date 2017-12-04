@@ -260,200 +260,572 @@ var getTestProjectConfig = function() {
 };
 
 var configWithFeatures = {
-  'attributes': [{ 'id': '594014', 'key': 'test_attribute' }],
-  'anonymizeIP': true,
-  'version': '4',
-  'groups': [{
-    'id': '595024',
-    'trafficAllocation': [{ 'endOfRange': 5000, 'entityId': '595010' }],
-    'experiments': [{
+  'events': [
+    {
+      'key': 'item_bought',
+      'id': '594089',
+      'experimentIds': [
+        '594098',
+        '595010',
+        '599028',
+        '599082'
+      ]
+    }
+  ],
+  'featureFlags': [
+    {
+      'rolloutId': '594030',
+      'key': 'test_feature',
+      'id': '594021',
+      'experimentIds': [],
+      'variables': [
+        {
+          'type': 'boolean',
+          'key': 'new_content',
+          'id': '4919852825313280',
+          'defaultValue': 'false'
+        },
+        {
+          'type': 'integer',
+          'key': 'lasers',
+          'id': '5482802778734592',
+          'defaultValue': '400'
+        },
+        {
+          'type': 'double',
+          'key': 'price',
+          'id': '6045752732155904',
+          'defaultValue': '14.99'
+        },
+        {
+          'type': 'string',
+          'key': 'message',
+          'id': '6327227708866560',
+          'defaultValue': 'Hello'
+        }
+      ]
+    },
+    {
+      'rolloutId': '594059',
+      'key': 'test_feature_2',
+      'id': '594050',
+      'experimentIds': [],
+      'variables': [
+        {
+          'type': 'double',
+          'key': 'miles_to_the_wall',
+          'id': '5060590313668608',
+          'defaultValue': '30.34'
+        },
+        {
+          'type': 'string',
+          'key': 'motto',
+          'id': '5342065290379264',
+          'defaultValue': 'Winter is coming'
+        },
+        {
+          'type': 'integer',
+          'key': 'soldiers_available',
+          'id': '6186490220511232',
+          'defaultValue': '1000'
+        },
+        {
+          'type': 'boolean',
+          'key': 'is_winter_coming',
+          'id': '6467965197221888',
+          'defaultValue': 'true'
+        }
+      ]
+    },
+    {
+      'rolloutId': '',
+      'key': 'test_feature_for_experiment',
+      'id': '594081',
+      'experimentIds': [
+        '594098'
+      ],
+      'variables': [
+        {
+          'type': 'integer',
+          'key': 'num_buttons',
+          'id': '4792309476491264',
+          'defaultValue': '10'
+        },
+        {
+          'type': 'boolean',
+          'key': 'is_button_animated',
+          'id': '5073784453201920',
+          'defaultValue': 'false'
+        },
+        {
+          'type': 'string',
+          'key': 'button_txt',
+          'id': '5636734406623232',
+          'defaultValue': 'Buy me'
+        },
+        {
+          'type': 'double',
+          'key': 'button_width',
+          'id': '6199684360044544',
+          'defaultValue': '50.55'
+        }
+      ]
+    },
+    {
+      'rolloutId': '',
+      'key': 'feature_with_group',
+      'id': '595001',
+      'experimentIds': [
+        '595010'
+      ],
+      'variables': []
+    },
+    {
+      'rolloutId': '599055',
+      'key': 'shared_feature',
+      'id': '599011',
+      'experimentIds': [
+        '599028'
+      ],
+      'variables': [
+        {
+          'type': 'integer',
+          'key': 'lasers',
+          'id': '4937719889264640',
+          'defaultValue': '100'
+        },
+        {
+          'type': 'string',
+          'key': 'message',
+          'id': '6345094772817920',
+          'defaultValue': 'shared'
+        }
+      ]
+    },
+    {
+      'rolloutId': '',
+      'key': 'unused_flag',
+      'id': '599110',
+      'experimentIds': [],
+      'variables': []
+    }
+  ],
+  'experiments': [
+    {
+      'trafficAllocation': [
+        {
+          'endOfRange': 5000,
+          'entityId': '594096'
+        },
+        {
+          'endOfRange': 10000,
+          'entityId': '594097'
+        }
+      ],
+      'layerId': '594093',
       'forcedVariations': {},
-      'status': 'Running',
-      'key': 'exp_with_group',
-      'id': '595010',
-      'variations': [{ 'id': '595008', 'variables': [], 'key': 'var' }, {
-        'id': '595009',
-        'variables': [],
-        'key': 'con'
-      }],
       'audienceIds': [],
-      'trafficAllocation': [{ 'endOfRange': 5000, 'entityId': '595008' }, {
-        'endOfRange': 10000,
-        'entityId': '595009'
-      }],
-      'layerId': '595005'
-    }],
-    'policy': 'random'
-  }],
-  'featureFlags': [{
-    'experimentIds': [],
-    'id': '594021',
-    'variables': [{
-      'id': '4919852825313280',
-      'type': 'boolean',
-      'defaultValue': 'false',
-      'key': 'new_content'
-    }, {
-      'id': '5482802778734592',
-      'type': 'integer',
-      'defaultValue': '400',
-      'key': 'lasers'
-    }, {
-      'id': '6045752732155904',
-      'type': 'double',
-      'defaultValue': '14.99',
-      'key': 'price'
-    }, { 'id': '6327227708866560', 'type': 'string', 'defaultValue': 'Hello', 'key': 'message' }],
-    'key': 'test_feature',
-    'rolloutId': '594030'
-  }, {
-    'experimentIds': [],
-    'id': '594050',
-    'variables': [{
-      'id': '5060590313668608',
-      'type': 'double',
-      'defaultValue': '30.34',
-      'key': 'miles_to_the_wall'
-    }, {
-      'id': '5342065290379264',
-      'type': 'string',
-      'defaultValue': 'Winter is coming',
-      'key': 'motto'
-    }, {
-      'id': '6186490220511232',
-      'type': 'integer',
-      'defaultValue': '1000',
-      'key': 'soldiers_available'
-    }, { 'id': '6467965197221888', 'type': 'boolean', 'defaultValue': 'true', 'key': 'is_winter_coming' }],
-    'key': 'test_feature_2',
-    'rolloutId': '594059'
-  }, {
-    'experimentIds': ['594098'],
-    'id': '594081',
-    'variables': [{
-      'id': '4792309476491264',
-      'type': 'integer',
-      'defaultValue': '10',
-      'key': 'num_buttons'
-    }, {
-      'id': '5073784453201920',
-      'type': 'boolean',
-      'defaultValue': 'false',
-      'key': 'is_button_animated'
-    }, {
-      'id': '5636734406623232',
-      'type': 'string',
-      'defaultValue': 'Buy me',
-      'key': 'button_txt'
-    }, { 'id': '6199684360044544', 'type': 'double', 'defaultValue': '50.55', 'key': 'button_width' }],
-    'key': 'test_feature_for_experiment',
-    'rolloutId': ''
-  }, { 'experimentIds': ['595010'], 'id': '595001', 'variables': [], 'key': 'feature_with_group', 'rolloutId': '' }],
-  'variables': [],
-  'revision': '18',
-  'experiments': [{
-    'forcedVariations': {},
-    'status': 'Running',
-    'key': 'testing_my_feature',
-    'id': '594098',
-    'variations': [{
-      'id': '594096',
-      'variables': [{ 'id': '4792309476491264', 'value': '2' }, {
-        'id': '5073784453201920',
-        'value': 'true'
-      }, { 'id': '5636734406623232', 'value': 'Buy me NOW' }, { 'id': '6199684360044544', 'value': '20.25' }],
-      'key': 'variation'
-    }, {
-      'id': '594097',
-      'variables': [{ 'id': '4792309476491264', 'value': '10' }, {
-        'id': '5073784453201920',
-        'value': 'false'
-      }, { 'id': '5636734406623232', 'value': 'Buy me' }, { 'id': '6199684360044544', 'value': '50.55' }],
-      'key': 'control'
-    }],
-    'audienceIds': [],
-    'trafficAllocation': [{ 'endOfRange': 5000, 'entityId': '594096' }, { 'endOfRange': 10000, 'entityId': '594097' }],
-    'layerId': '594093'
-  }],
-  'audiences': [{
-    'conditions': '["and", ["or", ["or", {"name": "test_attribute", "value": "test_value", "type": "custom_attribute"}]]]',
-    'name': 'test_audience',
-    'id': '594017'
-  }],
+      'variations': [
+        {
+          'key': 'variation',
+          'id': '594096',
+          'variables': [
+            {
+              'id': '4792309476491264',
+              'value': '2'
+            },
+            {
+              'id': '5073784453201920',
+              'value': 'true'
+            },
+            {
+              'id': '5636734406623232',
+              'value': 'Buy me NOW'
+            },
+            {
+              'id': '6199684360044544',
+              'value': '20.25'
+            }
+          ]
+        },
+        {
+          'key': 'control',
+          'id': '594097',
+          'variables': [
+            {
+              'id': '4792309476491264',
+              'value': '10'
+            },
+            {
+              'id': '5073784453201920',
+              'value': 'false'
+            },
+            {
+              'id': '5636734406623232',
+              'value': 'Buy me'
+            },
+            {
+              'id': '6199684360044544',
+              'value': '50.55'
+            }
+          ]
+        }
+      ],
+      'status': 'Running',
+      'key': 'testing_my_feature',
+      'id': '594098'
+    },
+    {
+      'trafficAllocation': [
+        {
+          'endOfRange': 5000,
+          'entityId': '599026'
+        },
+        {
+          'endOfRange': 10000,
+          'entityId': '599027'
+        }
+      ],
+      'layerId': '599023',
+      'forcedVariations': {},
+      'audienceIds': [
+        '594017'
+      ],
+      'variations': [
+        {
+          'key': 'treatment',
+          'id': '599026',
+          'variables': [
+            {
+              'id': '4937719889264640',
+              'value': '100'
+            },
+            {
+              'id': '6345094772817920',
+              'value': 'shared'
+            }
+          ]
+        },
+        {
+          'key': 'control',
+          'id': '599027',
+          'variables': [
+            {
+              'id': '4937719889264640',
+              'value': '100'
+            },
+            {
+              'id': '6345094772817920',
+              'value': 'shared'
+            }
+          ]
+        }
+      ],
+      'status': 'Running',
+      'key': 'test_shared_feature',
+      'id': '599028'
+    }
+  ],
+  'anonymizeIP': true,
+  'audiences': [
+    {
+      'id': '594017',
+      'name': 'test_audience',
+      'conditions': '["and", ["or", ["or", {"type": "custom_attribute", "name": "test_attribute", "value": "test_value"}]]]'
+    }
+  ],
+  'revision': '35',
+  'groups': [
+    {
+      'policy': 'random',
+      'id': '595024',
+      'experiments': [
+        {
+          'trafficAllocation': [
+            {
+              'endOfRange': 5000,
+              'entityId': '595008'
+            },
+            {
+              'endOfRange': 10000,
+              'entityId': '595009'
+            }
+          ],
+          'layerId': '595005',
+          'forcedVariations': {},
+          'audienceIds': [],
+          'variations': [
+            {
+              'key': 'var',
+              'id': '595008',
+              'variables': []
+            },
+            {
+              'key': 'con',
+              'id': '595009',
+              'variables': []
+            }
+          ],
+          'status': 'Running',
+          'key': 'exp_with_group',
+          'id': '595010'
+        },
+        {
+          'trafficAllocation': [
+            {
+              'endOfRange': 5000,
+              'entityId': '599080'
+            },
+            {
+              'endOfRange': 10000,
+              'entityId': '599081'
+            }
+          ],
+          'layerId': '599077',
+          'forcedVariations': {},
+          'audienceIds': [],
+          'variations': [
+            {
+              'key': 'treatment',
+              'id': '599080',
+              'variables': []
+            },
+            {
+              'key': 'control',
+              'id': '599081',
+              'variables': []
+            }
+          ],
+          'status': 'Running',
+          'key': 'other_exp_with_grup',
+          'id': '599082'
+        }
+      ],
+      'trafficAllocation': [
+        {
+          'endOfRange': 5000,
+          'entityId': '595010'
+        },
+        {
+          'endOfRange': 10000,
+          'entityId': '599082'
+        }
+      ]
+    }
+  ],
+  'attributes': [
+    {
+      'key': 'test_attribute',
+      'id': '594014'
+    }
+  ],
+  'rollouts': [
+    {
+      'id': '594030',
+      'experiments': [
+        {
+          'trafficAllocation': [
+            {
+              'endOfRange': 5000,
+              'entityId': '594032'
+            }
+          ],
+          'layerId': '594030',
+          'forcedVariations': {},
+          'audienceIds': [
+            '594017'
+          ],
+          'variations': [
+            {
+              'key': '594032',
+              'id': '594032',
+              'variables': [
+                {
+                  'id': '4919852825313280',
+                  'value': 'true'
+                },
+                {
+                  'id': '5482802778734592',
+                  'value': '395'
+                },
+                {
+                  'id': '6045752732155904',
+                  'value': '4.99'
+                },
+                {
+                  'id': '6327227708866560',
+                  'value': 'Hello audience'
+                }
+              ]
+            }
+          ],
+          'status': 'Not started',
+          'key': '594031',
+          'id': '594031'
+        },
+        {
+          'trafficAllocation': [
+            {
+              'endOfRange': 0,
+              'entityId': '594038'
+            }
+          ],
+          'layerId': '594030',
+          'forcedVariations': {},
+          'audienceIds': [],
+          'variations': [
+            {
+              'key': '594038',
+              'id': '594038',
+              'variables': [
+                {
+                  'id': '4919852825313280',
+                  'value': 'false'
+                },
+                {
+                  'id': '5482802778734592',
+                  'value': '400'
+                },
+                {
+                  'id': '6045752732155904',
+                  'value': '14.99'
+                },
+                {
+                  'id': '6327227708866560',
+                  'value': 'Hello'
+                }
+              ]
+            }
+          ],
+          'status': 'Not started',
+          'key': '594037',
+          'id': '594037'
+        }
+      ]
+    },
+    {
+      'id': '594059',
+      'experiments': [
+        {
+          'trafficAllocation': [
+            {
+              'endOfRange': 10000,
+              'entityId': '594061'
+            }
+          ],
+          'layerId': '594059',
+          'forcedVariations': {},
+          'audienceIds': [
+            '594017'
+          ],
+          'variations': [
+            {
+              'key': '594061',
+              'id': '594061',
+              'variables': [
+                {
+                  'id': '5060590313668608',
+                  'value': '27.34'
+                },
+                {
+                  'id': '5342065290379264',
+                  'value': 'Winter is NOT coming'
+                },
+                {
+                  'id': '6186490220511232',
+                  'value': '10003'
+                },
+                {
+                  'id': '6467965197221888',
+                  'value': 'false'
+                }
+              ]
+            }
+          ],
+          'status': 'Not started',
+          'key': '594060',
+          'id': '594060'
+        },
+        {
+          'trafficAllocation': [
+            {
+              'endOfRange': 10000,
+              'entityId': '594067'
+            }
+          ],
+          'layerId': '594059',
+          'forcedVariations': {},
+          'audienceIds': [],
+          'variations': [
+            {
+              'key': '594067',
+              'id': '594067',
+              'variables': [
+                {
+                  'id': '5060590313668608',
+                  'value': '30.34'
+                },
+                {
+                  'id': '5342065290379264',
+                  'value': 'Winter is coming definitely'
+                },
+                {
+                  'id': '6186490220511232',
+                  'value': '500'
+                },
+                {
+                  'id': '6467965197221888',
+                  'value': 'true'
+                }
+              ]
+            }
+          ],
+          'status': 'Not started',
+          'key': '594066',
+          'id': '594066'
+        }
+      ]
+    },
+    {
+      'id': '599055',
+      'experiments': [
+        {
+          'trafficAllocation': [
+            {
+              'endOfRange': 10000,
+              'entityId': '599057'
+            }
+          ],
+          'layerId': '599055',
+          'forcedVariations': {},
+          'audienceIds': [],
+          'variations': [
+            {
+              'key': '599057',
+              'id': '599057',
+              'variables': [
+                {
+                  'id': '4937719889264640',
+                  'value': '200'
+                },
+                {
+                  'id': '6345094772817920',
+                  'value': 'i\'m a rollout'
+                }
+              ]
+            }
+          ],
+          'status': 'Not started',
+          'key': '599056',
+          'id': '599056'
+        }
+      ]
+    }
+  ],
   'projectId': '594001',
   'accountId': '572018',
-  'rollouts': [{
-    'id': '594030',
-    'experiments': [{
-      'forcedVariations': {},
-      'status': 'Not started',
-      'key': '594031',
-      'id': '594031',
-      'variations': [{
-        'id': '594032',
-        'variables': [{ 'id': '4919852825313280', 'value': 'true' }, {
-          'id': '5482802778734592',
-          'value': '395'
-        }, { 'id': '6045752732155904', 'value': '4.99' }, { 'id': '6327227708866560', 'value': 'Hello audience' }],
-        'key': '594032'
-      }],
-      'audienceIds': ['594017'],
-      'trafficAllocation': [{ 'endOfRange': 5000, 'entityId': '594032' }],
-      'layerId': '594030'
-    }, {
-      'forcedVariations': {},
-      'status': 'Not started',
-      'key': '594037',
-      'id': '594037',
-      'variations': [{
-        'id': '594038',
-        'variables': [{ 'id': '4919852825313280', 'value': 'false' }, {
-          'id': '5482802778734592',
-          'value': '400'
-        }, { 'id': '6045752732155904', 'value': '14.99' }, { 'id': '6327227708866560', 'value': 'Hello' }],
-        'key': '594038'
-      }],
-      'audienceIds': [],
-      'trafficAllocation': [{ 'endOfRange': 0, 'entityId': '594038' }],
-      'layerId': '594030'
-    }]
-  }, {
-    'id': '594059',
-    'experiments': [{
-      'forcedVariations': {},
-      'status': 'Not started',
-      'key': '594060',
-      'id': '594060',
-      'variations': [{
-        'id': '594061',
-        'variables': [{ 'id': '5060590313668608', 'value': '27.34' }, {
-          'id': '5342065290379264',
-          'value': 'Winter is NOT coming'
-        }, { 'id': '6186490220511232', 'value': '10003' }, { 'id': '6467965197221888', 'value': 'false' }],
-        'key': '594061'
-      }],
-      'audienceIds': ['594017'],
-      'trafficAllocation': [{ 'endOfRange': 10000, 'entityId': '594061' }],
-      'layerId': '594059'
-    }, {
-      'forcedVariations': {},
-      'status': 'Not started',
-      'key': '594066',
-      'id': '594066',
-      'variations': [{
-        'id': '594067',
-        'variables': [{ 'id': '5060590313668608', 'value': '30.34' }, {
-          'id': '5342065290379264',
-          'value': 'Winter is coming definitely'
-        }, { 'id': '6186490220511232', 'value': '500' }, { 'id': '6467965197221888', 'value': 'true' }],
-        'key': '594067'
-      }],
-      'audienceIds': [],
-      'trafficAllocation': [{ 'endOfRange': 10000, 'entityId': '594067' }],
-      'layerId': '594059'
-    }]
-  }],
-  'events': [{ 'experimentIds': ['594098', '595010'], 'id': '594089', 'key': 'item_bought' }]
+  'version': '4',
+  'variables': []
 };
 
 var getTestProjectConfigWithFeatures = function() {
@@ -462,6 +834,57 @@ var getTestProjectConfigWithFeatures = function() {
 
 var datafileWithFeaturesExpectedData = {
   rolloutIdMap: {
+    599055: {
+      'id': '599055',
+      'experiments': [
+        {
+          'trafficAllocation': [
+            {
+              'endOfRange': 10000,
+              'entityId': '599057'
+            }
+          ],
+          'layerId': '599055',
+          'forcedVariations': {},
+          'audienceIds': [],
+          'variations': [
+            {
+              'key': '599057',
+              'id': '599057',
+              'variables': [
+                {
+                  'id': '4937719889264640',
+                  'value': '200'
+                },
+                {
+                  'id': '6345094772817920',
+                  'value': 'i\'m a rollout'
+                }
+              ]
+            }
+          ],
+          'status': 'Not started',
+          'key': '599056',
+          'id': '599056',
+          variationKeyMap: {
+            599057: {
+              'key': '599057',
+              'id': '599057',
+              'variables': [
+                {
+                  'id': '4937719889264640',
+                  'value': '200'
+                },
+                {
+                  'id': '6345094772817920',
+                  'value': 'i\'m a rollout'
+                },
+              ],
+            },
+          },
+        },
+      ],
+    },
     594030: {
       experiments: [
         {
@@ -837,6 +1260,38 @@ var datafileWithFeaturesExpectedData = {
     },
     595008: {},
     595009: {},
+    599026: {
+      4937719889264640: {
+        'id': '4937719889264640',
+        'value': '100'
+      },
+      6345094772817920: {
+        'id': '6345094772817920',
+        'value': 'shared'
+      },
+    },
+    599027: {
+      4937719889264640: {
+        'id': '4937719889264640',
+        'value': '100'
+      },
+      6345094772817920: {
+        'id': '6345094772817920',
+        'value': 'shared'
+      },
+    },
+    599057: {
+      4937719889264640: {
+        'id': '4937719889264640',
+        'value': '200'
+      },
+      6345094772817920: {
+        'id': '6345094772817920',
+        'value': 'i\'m a rollout'
+      },
+    },
+    599080: {},
+    599081: {},
   },
 
   featureKeyMap: {
@@ -1008,6 +1463,48 @@ var datafileWithFeaturesExpectedData = {
       'id': '595001',
       variableKeyMap: {},
       groupId: '595024',
+    },
+    shared_feature: {
+      'rolloutId': '599055',
+      'key': 'shared_feature',
+      'id': '599011',
+      'experimentIds': ['599028'],
+      'variables': [
+        {
+          'type': 'integer',
+          'key': 'lasers',
+          'id': '4937719889264640',
+          'defaultValue': '100'
+        },
+        {
+          'type': 'string',
+          'key': 'message',
+          'id': '6345094772817920',
+          'defaultValue': 'shared'
+        }
+      ],
+      variableKeyMap: {
+        message: {
+          'type': 'string',
+          'key': 'message',
+          'id': '6345094772817920',
+          'defaultValue': 'shared'
+        },
+        lasers: {
+          'type': 'integer',
+          'key': 'lasers',
+          'id': '4937719889264640',
+          'defaultValue': '100'
+        }
+      }
+    },
+    unused_flag: {
+      'rolloutId': '',
+      'key': 'unused_flag',
+      'id': '599110',
+      'experimentIds': [],
+      'variables': [],
+      variableKeyMap: {},
     },
   },
 };
