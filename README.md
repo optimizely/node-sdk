@@ -5,6 +5,9 @@
 
 This repository houses the Node SDK for Optimizely X Full Stack.
 
+## Upgrading to 2.0
+We have combined both the [JavaScript](https://github.com/optimizely/javascript-sdk) and the Node SDK repos and packages into one for version 2.0 and forward. In order to use the Feature Management APIs, please refer to the new [combined repository](https://github.com/optimizely/javascript-sdk/tree/master/packages/optimizely-sdk).
+
 ## Getting Started
 
 ### Installing the SDK
